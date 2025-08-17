@@ -20,7 +20,7 @@
       <span class="ml-1"><%= t('.logs.index.title') %></span>
     <% end %>
     <%= button_to({ action: 'migrate', id: model.id }, class: 'button is-small is-rounded is-warning') do %>
-      <i class="fa-solid fa-rotate"></i>
+      <%= svg_tag 'rotate' %>
       <span class="ml-1"><%= t('.migrate.title') %></span>
     <% end %>
   </div>
