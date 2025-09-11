@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   namespace :sync, defaults: { business: 'sync' } do
     resources :items, only: [:index, :create] do
       collection do
@@ -36,5 +35,4 @@ Rails.application.routes.draw do
 
     end
   end
-
 end
