@@ -1,7 +1,9 @@
 <td><%= model.type_i18n %></td>
 <td><%= model.name %></td>
-<td><%= model.appid %></td>
-<td><%= model.secret %></td>
+<td>
+  <p><%= model.appid %></p>
+  <p><%= model.secret %></p>
+</td>
 <td><%= model.base_url %></td>
 <td>
   <div data-show-target="item" class="visibility-hidden">
@@ -16,7 +18,7 @@
     <% end %>
   </div>
   <div data-show-target="item" class="visibility-hidden">
-    <%= link_to({ controller: 'records', app_id: model.id }, class: 'button is-small is-rounded is-primary') do %>
+    <%= link_to({ controller: 'records', app_id: model.id }, class: 'button is-small is-borderless') do %>
       <%= svg_tag 'list' %>
       <span class="ml-1"><%= t('.records.index.title') %></span>
     <% end %>
