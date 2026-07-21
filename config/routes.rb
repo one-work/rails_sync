@@ -1,4 +1,4 @@
-Rails.application.routes.draw do
+Rails.app.routes.draw do
   namespace :sync, defaults: { business: 'sync' } do
     resources :items, only: [:index, :create] do
       collection do

@@ -8,7 +8,7 @@ module RailsSync
   end
 
   def self.options
-    @options ||= Rails.application.config_for('rails_sync').with_indifferent_access
+    @options ||= Rails.app.config_for('rails_sync').with_indifferent_access
   end
 
 end
