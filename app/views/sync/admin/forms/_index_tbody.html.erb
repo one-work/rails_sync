@@ -9,16 +9,16 @@
 </td>
 <td>
   <%= form_with theme: 'switch', model: model, url: { action: 'update', id: model.id }, data: { controller: 'input' } do |f| %>
-    <%= f.check_box :display, data: { action: 'input#submit' }, id: nil %>
+    <%= f.checkbox :display, data: { action: 'input#submit' }, id: nil %>
   <% end %>
 </td>
 <td>
   <%= form_with theme: 'switch', model: model, url: { action: 'update', id: model.id }, data: { controller: 'input' } do |f| %>
-    <%= f.check_box :primary, data: { action: 'input#submit' }, id: nil %>
+    <%= f.checkbox :primary, data: { action: 'input#submit' }, id: nil %>
   <% end %>
 </td>
 <td>
   <%= form_with theme: 'switch', model: model, url: { action: 'update', id: model.id }, data: { controller: 'input' } do |f| %>
-    <%= f.check_box :modeling, data: { action: 'input#submit' }, id: nil %>
+    <%= f.checkbox :modeling, data: { action: 'input#submit' }, id: nil %>
   <% end %>
 </td>
